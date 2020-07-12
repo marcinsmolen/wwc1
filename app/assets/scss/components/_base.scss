@@ -1,0 +1,11 @@
+@use 'variables' as *;
+
+.text{
+    &--gray{
+        color:$base-color;
+    }
+}
+
+.layout-long{
+    grid-row:1/5;
+}
