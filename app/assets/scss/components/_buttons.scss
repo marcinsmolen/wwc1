@@ -3,6 +3,7 @@
     box-shadow: none;
     border-radius: 3px;
     outline: none;
+    height: 48px;
     text-shadow: 1px 2px 1px #51850E;
     &--green{
         border:solid 1px $dark-green;
@@ -12,6 +13,7 @@
 
     &--medium-text{
         width:140px;
+        height: 41px;
     }
 
     &--red{
@@ -28,7 +30,13 @@
         max-width:100%;
         width:150px;
         font-size:18px;
+        height: 41px;
     }
 
-
+    @media (max-width:450px){ 
+        max-width:none;
+        width:100%;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
 }
