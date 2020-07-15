@@ -4,17 +4,18 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   mode: 'development',
   entry: './app/assets/js/Index.js',
   output: {
     filename: 'bundle.js',
-    path: path.resolve(__dirname, 'public/assets'),
+    path: path.resolve(__dirname, 'public/'),
   },
   devServer: {
     contentBase:path.resolve(__dirname, 'app'),
-    publicPath: '/assets/'
+    publicPath: '/public'
   },
   module: { 
     rules: [
@@ -23,13 +24,13 @@ module.exports = {
         loader : 'file-loader'
        },
       {
-        test: /\.(gif|png|jpe?g)$/,
+        test: /\.(gif|png|jpg|jpeg)$/,
         use: [
           {
             loader: 'file-loader',
             options: {
               name: '[name].[ext]',
-              outputPath: 'img/'
+              outputPath: 'assets/img/'
             }
           }
         ]
@@ -70,6 +71,14 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: "[name].css",
       chunkFilename: "[id].css"
+    }),
+    new CopyPlugin({
+      patterns: [
+        { 
+          from:path.resolve(__dirname, 'app/assets/', 'img'), 
+          to: path.resolve(__dirname, 'public/assets/', 'img')
+        }
+      ],
     }),
 
   ]

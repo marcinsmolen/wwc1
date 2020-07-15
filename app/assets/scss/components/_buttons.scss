@@ -38,5 +38,7 @@
         width:100%;
         grid-column-start: 1;
         grid-column-end: 3;
+        -ms-grid-column-start: 1;
+        -ms-grid-column-end: 3;
     }
 }

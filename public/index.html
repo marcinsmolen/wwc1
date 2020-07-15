@@ -1,13 +1,323 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8"> 
-    <link rel="stylesheet" href="./assets/App.min.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="./App.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
-<body>
-  <img src="/assets/img/logo.png" alt="such a pup!" width="100%">
-</body>
-<script src="./assets/bundle.js"></script>
-</html> 
+
+
+<body >
+  <div class="wrapper">
+  <div class="block block--center">
+    <img class="main-logo" src="assets/img/logo.png">
+  </div>
+
+  <div class="container">
+    <div class="column">
+
+    
+    <div class="block block--6">
+      <div class="text__header text__header--white text--center">
+        Register Form
+      </div>
+      <div class="block block--shadow">
+        <div class="block__form">
+          <div class="block__input-content">
+            <div class="block__input-box">
+              <div class="block__icon">
+                <img src="assets/img/user.png">
+              </div>
+
+              <div class="field__box">
+                <input type="text" class="field__input" placeholder="Username">
+              </div>
+            </div>
+          </div>
+
+          <div class="block__input-content">
+            <div class="block__input-box">
+              <div class="block__icon">
+                <img src="assets/img/lock.png">
+              </div>
+
+              <div class="field__box">
+                <input type="password" class="field__input" placeholder="Password">
+              </div>
+            </div>
+          </div>
+
+          <div class="block__input-content">
+            <div class="block__input-box">
+              <div class="block__icon">
+                <img src="assets/img/lock.png">
+              </div>
+
+              <div class="field__box">
+                <input type="password" class="field__input" placeholder="Confirm password">
+              </div>
+            </div>
+          </div>
+          <div class="block__input-content">
+            <div class="block__input-box">
+              <div class="block__icon">
+                <img src="assets/img/envelope.png">
+              </div>
+
+              <div class="field__box">
+                <input type="text" class="field__input" placeholder="Email">
+              </div>
+            </div>
+          </div>
+
+          <div class="block__input-content">
+            <div class="block__input-box">
+              <div class="block__icon">
+                <img src="assets/img/maps.png">
+              </div>
+
+              <div class="field__box field__box--with-arrow">
+                <select name="" id="" class="field__input field__input--no-arrow">
+                  <option value="0" class="field__input--gray">Your Location</option>
+                  <option value="PL" class="field__input--gray">PL</option>
+                  <option value="EN" class="field__input--gray">EN</option>
+                  <option value="ES" class="field__input--gray">ES</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="block__input-content block__input-content--negative-top block__input-content block__input-content--no-border block__input-content--no-background">
+            <label class="block__agreement block--vertical-center text--gray" for="agree2">
+              <div class="field__block  field__block--vertical-center">
+                <input type="checkbox" class="field__input-checkbox" id='agree2'>
+                <div class="field__input-checkmark"></div>
+              </div>
+              <span class="text--gray agree__text">
+                I have read and accept the terms of use.
+              </span>
+            </label>
+          </div>
+
+          <div class="block__input-content">
+            <div class="block__input-box block__input-box--full block__input-box--no-border">
+              <input type="submit" class="button button--green" value="Sign up">
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+    <div class="block block--6">
+      <div class="text__header text__header--white text--center">
+        Send Email
+      </div>
+      <div class="block block--shadow">
+        <div class="block__form">
+          <div class="block__input-content">
+            <div class="block__input-box">
+              <div class="block__icon">
+                <img src="assets/img/user.png">
+              </div>
+
+              <div class="field__box">
+                <input type="text" class="field__input" placeholder="Your Name">
+              </div>
+            </div>
+          </div>
+
+          <div class="block__input-content">
+            <div class="block__input-box">
+              <div class="block__icon">
+                <img src="assets/img/envelope.png">
+              </div>
+
+              <div class="field__box">
+                <input type="password" class="field__input" placeholder="Your Email">
+              </div>
+            </div>
+          </div>
+
+
+          <div class="block__input-content">
+            <div class="block__input-box block__input-box--one-column">
+
+              <div class="field__box field__box--no-border">
+                <textarea name="" class="field__input field__input-textarea" cols="30" rows="10"
+                  placeholder="Type your message ..."></textarea>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="block__input-content block__input-content--negative-top block__input-content block__input-content--no-border block__input-content--no-background">
+            <label class="block__agreement block--vertical-center text--gray" for="agree2">
+              <div class="field__block  field__block--vertical-center">
+                <input type="checkbox" class="field__input-checkbox" id='agree2'>
+                <div class="field__input-checkmark"></div>
+              </div>
+              <span class="text--gray agree__text">
+                Send a copy to my Email
+              </span>
+            </label>
+          </div>
+
+          <div class="block__input-content">
+            <div class="block__input-box block__input-box--full block__input-box--no-border">
+              <input type="submit" class="button button--green" value="Send Email">
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="column">
+    <div class="block block--6">
+      <div class="text__header text__header--white text--center">
+        Sign In Form
+      </div>
+      <div class="block block--shadow">
+        <div class="block__form">
+          <div class="block__input-content">
+            <div class="block__input-box">
+              <div class="block__icon">
+                <img src="assets/img/user.png">
+              </div>
+
+              <div class="field__box">
+                <input type="text" class="field__input" placeholder="Username">
+              </div>
+            </div>
+          </div>
+
+          <div class="block__input-content">
+            <div class="block__input-box">
+              <div class="block__icon">
+                <img src="assets/img/lock.png">
+              </div>
+
+              <div class="field__box">
+                <input type="password" class="field__input" placeholder="Password">
+              </div>
+            </div>
+          </div>
+          <div class="block__input-content block__input-content--no-border block__input-content--no-background">
+            <div
+              class="block__input-box block__input-box--half  block__input-box--no-background block__input-box--no-border">
+              <label class="block__agreement block--vertical-center text--gray" for="agree1">
+                <div class="field__block  field__block--vertical-center">
+                  <input type="checkbox" class="field__input-checkbox" id='agree1'>
+                  <div class="field__input-checkmark"></div>
+                </div>
+                <span class="text--gray agree__text">
+                  Remember Me
+                </span>
+              </label>
+
+              <input type="submit" class="button button--green button--medium-text" value="Sign up">
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="block block--6">
+      <div class="text__header text__header--white text--center">
+        Recover Form
+      </div>
+      <div class="block block--shadow">
+        <div class="block__form">
+          <div class="block__input-content">
+            <div class="block__input-box">
+              <div class="block__icon">
+                <img src="assets/img/envelope.png">
+              </div>
+
+              <div class="field__box">
+                <input type="text" class="field__input" placeholder="Enter your Email">
+              </div>
+            </div>
+          </div>
+
+          <div class="block__input-content">
+            <div class="block__input-box">
+              <div class="block__icon">
+                <img src="assets/img/phone.png">
+              </div>
+
+              <div class="field__box">
+                <input type="text" class="field__input" placeholder="Enter your Phone number">
+              </div>
+            </div>
+          </div>
+          <div class="block__input-content block__input-content--no-border block__input-content--no-background">
+            <div
+              class="block__input-box block__input-box--half  block__input-box--no-background block__input-box--no-border">
+              <input type="submit" class="button button--green button--short " value="Send">
+
+              <input type="submit" class="button button--green button--inactive button--short" value="Done">
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="block block--6">
+      <div class="text__header text__header--white text--center">
+        Subscribe Form
+      </div>
+      <div class="block block--shadow">
+        <div class="block__form">
+          <div class="block__input-content">
+            <div class="block__input-box">
+              <div class="block__icon">
+                <img src="assets/img/envelope.png">
+              </div>
+
+              <div class="field__box">
+                <input type="text" class="field__input" placeholder="Enter your Email">
+              </div>
+            </div>
+          </div>
+
+          <div class="block__input-content block__input-content--no-border block__input-content--no-background">
+            <div
+              class="block__input-box block__input-box--half  block__input-box--no-background block__input-box--no-border">
+              <input type="submit" class="button button--green button--short" value="Subscribe">
+
+              <input type="submit" class="button button--red button--short" value="No, Thanks">
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+      <div class="block--6 text--center block__with-img">
+        <img class="main-logo" src="assets/img/logo_big.png" alt="">
+      </div>
+  
+</div>
+   
+
+ 
+
+
+  </div>
+</div>
+<script src="bundle.js"></script></body>
+<script src="./bundle.js"></script>
+
+</html>

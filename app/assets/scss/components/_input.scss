@@ -108,6 +108,7 @@
         position: relative;
         &--vertical-center{
             display:grid;
+            display:-ms-grid;
             align-items: center;
         }
     }
@@ -116,6 +117,7 @@
         display: grid;
         border-left:solid 1px $placeholder-color;
         margin: 6px 0px 3px 0px;
+        display:-ms-grid;
         position:relative;
 
         &--no-border{

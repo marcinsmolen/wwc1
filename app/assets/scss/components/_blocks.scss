@@ -3,7 +3,7 @@
 body{
     margin:0;
     padding:0;
-    background-image:url('./img/background.jpg');
+    background-image:url('./assets/img/background.jpg');
     background-repeat: no-repeat; 
     background-size:cover;
     font-family: 'Titillium Web', sans-serif;
@@ -18,6 +18,8 @@ body{
     &__agreement{
         display:grid;
         grid-template-columns: 23px auto;
+        display:-ms-grid;
+        -ms-grid-template-columns: 23px auto;
     }
 
     &__input-content{
@@ -53,14 +55,17 @@ body{
 
     &__input-box{
         display: grid;
+        display: -ms-grid;
         border:solid 1px $border-color;
         border-radius:3px;
         background-color:$background-input;
         grid-template-columns: 52px auto;
+        -ms-grid-template-columns: 52px auto;
         margin: 17px 0px;
         z-index: 99;
         position: relative;
         max-width: 308px;
+        min-height: 39px;
 
         @media (max-width:450px){ 
             height:auto;
@@ -68,16 +73,19 @@ body{
 
         &--half{
             grid-template-columns: auto auto;  
+            -ms-grid-template-columns: auto auto;  
             justify-content: space-between;
         }
 
         &--one-column{
             grid-template-columns:auto;
+            -ms-grid-template-columns: auto auto;  
             height: auto;
         }
 
         &--full{
             grid-template-columns: auto;
+            -ms-grid-template-columns: auto;
             margin: 12px 0px 16px 0px;
         }
 
@@ -93,9 +101,10 @@ body{
     &__icon{
         padding: 8px 15px;
         display: grid;
+        display: -ms-grid;
         justify-content: center;
         align-items: center;
-
+ 
         &--no-padding-left{
             padding-left:0;
         }
