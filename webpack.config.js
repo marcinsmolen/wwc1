@@ -11,11 +11,11 @@ module.exports = {
   entry: './app/assets/js/Index.js',
   output: {
     filename: 'bundle.js',
-    path: path.resolve(__dirname, 'public/'),
+    path: path.resolve(__dirname, 'public/assets'),
   },
   devServer: {
     contentBase:path.resolve(__dirname, 'app'),
-    publicPath: '/public'
+    publicPath: '/'
   },
   module: { 
     rules: [
@@ -53,7 +53,7 @@ module.exports = {
           process.env.NODE_ENV !== 'production' ? 'style-loader' : MiniCssExtractPlugin.loader,
             {
                 loader: 'file-loader',
-                options: { outputPath: './', name: '[name].min.css'}
+                options: { outputPath: './assets/', name: '[name].min.css'}
             },
             'sass-loader'
         ]
